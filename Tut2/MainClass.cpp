@@ -33,6 +33,10 @@ int main()
 	Via overload constructor
 	k(n1, d1, n2, d2);
 	*/
+	obj.add();
+	obj.sub();
+	obj.mult();
+	obj.div();
 
 
 };
