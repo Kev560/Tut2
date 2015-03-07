@@ -8,9 +8,9 @@ class Fraction {
 	double deno2;
 
 public:
-	Fraction();
-	Fraction(double,double,double,double);
-	~Fraction();
+	Fraction(); //Default constructor
+	Fraction(double,double,double,double); //Overload constructor
+	~Fraction(); //Destructor
 
 	void setNume(double,double);
 	void setDen(double,double);

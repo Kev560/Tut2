@@ -71,6 +71,11 @@ double Fraction::div(){
 	return res;
 }
 
+void Fraction::print(){
+	
+
+}
+
 
 
 
