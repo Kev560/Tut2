@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Fraction::Fraction() {
+Fraction::Fraction() {											// Default Constructor
 
 	nume1 = 0.0;
 	deno1 = 0.1;
@@ -12,11 +12,15 @@ Fraction::Fraction() {
 
 }
 
-Fraction:: Fraction(double n1, double d1, double n2, double d2) {
+Fraction:: Fraction(double n1, double d1, double n2, double d2) { // Overload Constructor
 	nume1 = n1;
 	deno1 = d1;
 	nume2 = n2;
 	deno2 = d2;
+}
+
+Fraction:: ~Fraction(){												// Destructor
+
 }
 
 double Fraction::getNume1(){
@@ -44,6 +48,31 @@ void Fraction::setDen(double d1, double d2){
 	deno1 = d1;
 	deno2 = d2;
 }
+double Fraction::add(){
+	double res = 0.0;
+	res = (nume1 / deno1) + (nume2 / deno2);
+	return res;
+}
+
+double Fraction::sub(){
+	double res = 0.0;
+	res = (nume1 / deno1) - (nume2 / deno2);
+	return res;
+}
+
+double Fraction::mult(){
+	double res = 0.0;
+	res = (nume1 / deno1) * (nume2 / deno2);
+	return res;
+}
+double Fraction::div(){
+	double res = 0.0;
+	res = (nume1 / deno1) / (nume2 / deno2);
+	return res;
+}
+
+
+
 
 
 

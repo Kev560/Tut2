@@ -22,7 +22,6 @@ public:
 	double sub();
 	double mult();
 	double div();
-	void setFraction(int num, int den);
 	void print();
 
 };
