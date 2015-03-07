@@ -1,34 +1,22 @@
-#include <iostream>
-#include <string>
-
-using namespace std;
 #ifndef FRACTION_H
 #define FRACTION_H
 
-class Fraction{
-
-private:
-
+class Fraction {
 	int nume;
-	int den;
+	int deno;
+
+	
 
 public:
+	Fraction();
+	~Fraction();
 
-	Fraction(); //Default Constructor
-	~Fraction(); // Destructor
-	
-	int setNume();
-	int setDen();
-	void getNume();
-	void getDen();
-	void setFrac();
+	void setNume(int num);
+	void setDen(int den);
+	int getNume(void);
+	int getDen(void);
+	void setFraction(int num, int den);
 	void print();
 
-	Fraction add();
-	Fraction subtract();
-	Fraction mult();
-	Fraction div();
-
 };
-
 #endif
