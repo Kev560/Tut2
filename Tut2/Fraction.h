@@ -2,19 +2,26 @@
 #define FRACTION_H
 
 class Fraction {
-	int nume;
-	int deno;
-
-	
+	double nume1;
+	double deno1;
+	double nume2;
+	double deno2;
 
 public:
 	Fraction();
+	Fraction(double,double,double,double);
 	~Fraction();
 
-	void setNume(int num);
-	void setDen(int den);
-	int getNume(void);
-	int getDen(void);
+	void setNume(double,double);
+	void setDen(double,double);
+	double getNume1();
+	double getDen1();
+	double getNume2();
+	double getDen2();
+	double add();
+	double sub();
+	double mult();
+	double div();
 	void setFraction(int num, int den);
 	void print();
 
